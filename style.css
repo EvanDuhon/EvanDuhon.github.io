@@ -233,4 +233,14 @@ h2, h3 {
         .demo:hover {
           opacity: 1;
         }
-   
+        @media screen and (min-width: 120px) and (max-width: 1080px) {
+          main {
+            height: 100ch;
+            zoom: 1.5;
+            display: grid;
+          }
+
+          h1 {
+            font-size: 44px;
+          }
+        }
