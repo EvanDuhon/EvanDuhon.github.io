@@ -97,5 +97,5 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
-
+  bitcoin: {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIWaiK0OYWubm59DuGaDFg3u1iF1aMJYjGbhChNPnRJdDMXIyayRa-ywWZzmMbkk67-Q:https://www.save-your-bitcoins.com/media/image/product/8166/md/bitcoin-btc-muenze-aus-metall-vergoldet-echt-gold-ueberzogen~2.jpg&usqp=CAU"}
 };

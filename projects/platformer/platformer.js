@@ -50,8 +50,6 @@ createPlatform(200,700,200,10);
 
 createPlatform(100,600,200,10)
 
-createPlatform()
-
 createPlatform(30,700,10,10)
 
 createPlatform(800,700,200,10)
@@ -64,7 +62,7 @@ createPlatform(1000,200,200,10)
 
 createPlatform(700,400,2,2)
 
-createPlatform(800,300,2,2)
+createPlatform(800,300,7,2)
 
 createPlatform(900,85,10,2)
 
@@ -74,39 +72,6 @@ createPlatform(800,85,100,2)
 
 createPlatform(700,85,100,2)
 
-createPlatform(690,86,10,2)
-
-createPlatform(680,87,10,2)
-
-createPlatform(670,88,10,2)
-
-createPlatform(660,89,10,2)
-
-createPlatform(650,90,10,2)
-
-createPlatform(640,91,10,2)
-
-createPlatform(630,92,10,2)
-
-createPlatform(620,93,10,2)
-
-createPlatform(610,94,10,2)
-
-createPlatform(600,95,10,2)
-
-createPlatform(590,96,10,2)
-
-createPlatform(580,97,10,2)
-
-createPlatform(570,98,10,2)
-
-createPlatform(560,99,10,2)
-
-createPlatform(550,100,10,2)
-
-createPlatform(540,101,10,2)
-
-createPlatform(530,102,10,2)
 
 
 
@@ -132,6 +97,8 @@ createPlatform(530,102,10,2)
     createCollectable("diamond", 800, 100,0.001,)
 
     createCollectable("diamond", 900,100,100,0.001)
+
+    
 
     
 
