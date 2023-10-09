@@ -111,6 +111,8 @@ createPlatform(540,101,10,2)
 
 
 
+
+
     
     // TODO 2
     // Create collectables
