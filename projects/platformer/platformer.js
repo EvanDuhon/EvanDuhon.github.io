@@ -74,6 +74,14 @@ createPlatform(700,85,100,2)
 
 createPlatform(600,700,100,2)
 
+createPlatform(500,405,100,2)
+
+createPlatform(400,400,1,1)
+
+createPlatform(450,300,10,10)
+
+createPlatform(200,400,10,10)
+
 
 
 
@@ -94,13 +102,13 @@ createPlatform(600,700,100,2)
 
     createCollectable("diamond", 40, 100, 0.001, 0.3)
 
-    createCollectable("kennedi", 600, 300, 0.001, 0.01)
+    createCollectable("kennedi", 600, 300, 5, 0.01)
 
     createCollectable("bitcoin", 800, 100,0.001,)
 
     createCollectable("bored", 900, 100,100, 0.001)
 
-    createCollectable("vbuck",1000,100)
+    createCollectable("vbuck",800,50)
 
     
 
