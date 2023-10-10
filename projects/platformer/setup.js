@@ -97,5 +97,8 @@ var collectableList = {
   kennedi: { image: "images/collectables/kennedi-head.png" },
   max: { image: "images/collectables/max-head.png" },
   steve: { image: "images/collectables/steve-head.png" },
-  bitcoin: {image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWIWaiK0OYWubm59DuGaDFg3u1iF1aMJYjGbhChNPnRJdDMXIyayRa-ywWZzmMbkk67-Q:https://www.save-your-bitcoins.com/media/image/product/8166/md/bitcoin-btc-muenze-aus-metall-vergoldet-echt-gold-ueberzogen~2.jpg&usqp=CAU"}
+  bitcoin: {image:"https://www.usatoday.com/gcdn/-mm-/46837b90ae998993d99356e31057d6d0ad0c3903/c=334-0-1667-1333/local/-/media/2021/04/03/USATODAY/usatsports/MotleyFool-TMOT-feccc6d4-bitcoin-logo.jpg"}
+  ,bored: { image:"https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"}
+   ,vbuck: {image: "https://files.cults3d.com/uploaders/20673655/illustration-file/611799ce-2b67-4519-8937-296639746453/v-bucks3.png"}
+   ,ring: {image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_anpNHpF6gFmM9QegqdvZwhSVy-_ji677i_J0F35hI619FFGN0cIV5WVieMp7Xj7OK10:https://i.pinimg.com/originals/71/b7/2e/71b72ec0dfd5de48d552a84cae516d37.png&usqp=CAU"}
 };
