@@ -112,7 +112,7 @@ createPlatform(50,200,1,1)
 
     createCollectable("bored", 900, 100,100, 0.001)
 
-    createCollectable("ring",800,50)
+    createCollectable("ring",800,30)
 
     
 
@@ -142,7 +142,7 @@ createPlatform(50,200,1,1)
     
     createCannon("left", 400, 3000, 20, 100 ); 
 
-    createCannon("right",400,3000,100,10);
+    createCannon("right",400,2000,100,10);
 
     createCannon("right", 800,0,3000)
   
