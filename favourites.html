@@ -32,11 +32,6 @@
             <div class="topleft">
               <p>Logo</p>
             </div>
-            <div class="middle">
-              <h1>COMING SOON</h1>
-              <hr>
-              <p>35 days</p>
-            </div>
             <div class="bottomleft">
               <p>Some text</p>
             </div>
@@ -135,70 +130,74 @@
               .prev, .next,.text {font-size: 11px}
             }
             </style>
-            </head>
-            <body>
-            
-            <div class="slideshow-container">
-            
-            <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTT_R6ytRKvxhel5kxpVhn0CRL4-Lau1QW8g:https://m.media-amazon.com/images/S/pv-target-images/007057408be55d8c81b482856cdffca359b218591b42121de944230d65e7378a.jpg&usqp=CAU" style="width:100%">
-              <div class="text">The Truman Show</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIAULw7Nuy00YZzwRT1TCygveztuNYMXbm8mhfT42CwsgKm8wqyHHSEpA8hGKsJ2UEkLk:https://thecosmiccircus.com/wp-content/uploads/2022/12/pinocchio-review-banner.jpg&usqp=CAU" style="width:100%">
-              <div class="text">Del Toro's Pinnochio</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
-              <img src="img_mountains_wide.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-            
-            <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
+              <body>
+              
+              <div class="slideshow-container">
+              
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://direstraitsblog.com/wp-content/uploads/2017/08/maxresdefault.jpg" style="width:100%">
+                <div class="text">Whiplash</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://www.pacificu.edu/sites/default/files/Screen%20Shot%202022-12-08%20at%2011.19.32%20AM.png" style="width:100%">
+                <div class="text">Del Toro's Pinnochio</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://popculturepress.org/wp-content/uploads/2023/07/2c130933-15f5-4898-a6d6-3d5180b7c2e8.jpg" style="width:100%">
+                <div class="text">Oppenheimer</div>
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              
+              <script>
+              let slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
               }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
               }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-            
-            </body>
+              
+              function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+              }
+              </script>
+              
+              </body>
+
+               
+              
+
+
         </body>
      </html>
