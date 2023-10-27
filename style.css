@@ -1,5 +1,5 @@
 body {
-    background: rgb(109, 117, 133);
+    background: rgb(4, 33, 92);
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -59,7 +59,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge ;
+    border: 4px rgba(75, 90, 97, 0.343) ridge ;
     padding: 8px;
     border-radius: 30px;
 }
@@ -79,7 +79,7 @@ h2, h3 {
         }
 
         #portfolio li {
-            background: #fff;
+            background: #dce4f3;
             padding: 10px;
             border-radius: 10px;
             margin-bottom: 10px;
@@ -87,12 +87,12 @@ h2, h3 {
         }
 
         #portfolio li:hover {
-            background: #eee;
+            background: #f2fcfe;
         }
 
         #portfolio a {
             text-decoration: none;
-            color: #454545;
+            color: #3abac1;
         }
 
 
