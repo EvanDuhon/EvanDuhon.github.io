@@ -70,21 +70,23 @@ h2, h3 {
 
          /* portfolio styles */
          .content h1 {
-            color: black;
+            color: rgb(21, 21, 21);
         }
 
         #portfolio {
             list-style-type: none;
             padding-left: 0;
         }
-
-        #portfolio li {
-            background: #dce4f3;
-            padding: 10px;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            border-radius: 30px;
+        #portfolio body { 
+          background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSld8BVgYm_R9wsFVA-fIs87owmZXAxYiSppw:https://live.staticflickr.com/4204/35289882581_9873438219_h.jpg&usqp=CAU");
         }
+        #portfolio li {
+          background: white;
+          padding: 10px;
+          border-radius: 10px;
+          margin-bottom: 10px;
+          border-radius: 30px;
+      }
 
         #portfolio li:hover {
             background: #f2fcfe;
