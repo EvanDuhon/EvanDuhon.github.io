@@ -6,14 +6,14 @@
 	<script src="jquery.min.js"></script>
 	<style>
 		body {
-			background-image:url("https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fartsy-media-uploads.s3.amazonaws.com%2F2RNK1P0BYVrSCZEy_Sd1Ew%252F3417757448_4a6bdf36ce_o.jpg&width=910");
+			background-color: rgb(221, 205, 205);
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
 		.box {
 			width: 70px;
 			height: 70px;
-			background-color: rgb(248, 248, 250);
+			background-color: white;
 			font-size: 300%;
 			text-align: center;
 			user-select: none;
@@ -53,7 +53,7 @@
 			box.on('click', handleBoxClick);
 
 			// moves the Box to a new position on the screen along the X-Axis
-			function moveBoxTo(newPositionX,) {
+			function moveBoxTo(newPositionX, ) {
 				box.css('left', newPositionX);
 			}
 
@@ -84,15 +84,16 @@
             /* Increase value of positionX to 10  */
                positionX = positionX + speed    
 			
-				moveBoxTo(positionX);
+				moveBoxTo(positionX, );
                if(positionX > boardWidth){
 				speed = speed * -1; 
 			   }
 			   if(positionX < 0){
 				speed = speed * -1;
 			   }
-			   
-			  
+
+		
+
 			  
 			};
 

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Evan's Website</title>
   <link rel="stylesheet" href="style.css">
+  <title>Evan's Website</title>
   <link rel="shortcut icon" href="https://previews.123rf.com/images/niyazz/niyazz1312/niyazz131200057/24641883-letters-and-symbols-in-fire-letter-e.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div id="all-contents">
@@ -22,6 +22,12 @@
       </ul>
   </nav>
 <style>
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -134,7 +140,7 @@ img {vertical-align: middle;}
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="https://www.azquotes.com/picture-quotes/quote-a-person-who-thinks-all-the-time-has-nothing-to-think-about-except-thoughts-so-he-loses-alan-watts-67-52-78.jpg" style="width:100%">
+  <img src="https://www.coolnsmart.com/img/54/a-person-who-thinks-all-the-134534-2.png" style="width:100%">
   <div class="text"></div>
 </div>
 
@@ -177,6 +183,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
+setInterval(draw, 30);
 </script>
 
 </body>
