@@ -39,12 +39,20 @@ var background = function (window) {
             // TODO 1:
             // this currently fills the background with an obnoxious yellow;
             // you should modify both the height and color to suit your game
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
+            var backgroundFill = draw.rect(4000,1000,'black');
             background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
+            //img/moon.png
+            var moon = draw.bitmap("https://t3.ftcdn.net/jpg/05/61/98/62/360_F_561986211_Kihu33hxxLSIFkxOEL8GcYwmrIRLDEtI.jpg");
+           moon.x = 10;
+           moon.y = -100;
+           moon.scaleX = 3.0;
+           moon.scaleY = 3.0;
+           background.addChild(moon);
             
-            
+          
+          
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             
             
@@ -58,9 +66,9 @@ var background = function (window) {
         // called on each timer "tick" - 60 times per second
         function update() {
             // useful variables
-            var canvasWidth = app.canvas.width;
-            var canvasHeight = app.canvas.height;
-            var groundY = ground.y;
+            canvasWidth = app.canvas.width;
+            canvasHeight = app.canvas.height;
+            groundY = ground.y;
             
             // TODO 3: Part 2 - Move the tree!
             
