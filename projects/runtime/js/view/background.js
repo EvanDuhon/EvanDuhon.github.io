@@ -29,8 +29,9 @@ var background = function (window) {
         // ANIMATION VARIABLES HERE //////////////////////////////////////
         //////////////////////////////////////////////////////////////////
         // TODO (several):
-      
-      
+        var tree;
+        
+        var buildings = []
         // called at the start of game and whenever the page is resized
         // add objects for display in background. draws each image added to the background once
         function render() {
@@ -43,21 +44,33 @@ var background = function (window) {
             background.addChild(backgroundFill);
             
             // TODO 2: - Add a moon and starfield
-            //img/moon.png
-            var moon = draw.bitmap("https://t3.ftcdn.net/jpg/05/61/98/62/360_F_561986211_Kihu33hxxLSIFkxOEL8GcYwmrIRLDEtI.jpg");
+            var moon = draw.bitmap("https://c4.wallpaperflare.com/wallpaper/231/816/19/retrowave-theme-background-images-wallpaper-preview.jpg");
            moon.x = 10;
-           moon.y = -100;
-           moon.scaleX = 3.0;
-           moon.scaleY = 3.0;
+           moon.y = -80;
+           moon.scaleX = 2.0;
+           moon.scaleY = 2.0;
            background.addChild(moon);
             
           
           
             // TODO 4: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
-            
+            for (var i = 0; i < 5; ++i) {
+                var buildingHeight = 300;
+                var building = draw.rect(75, buildingHeight, "#035ee8", "#f6019d", 1);
+                building.x = 350 * i;
+                building.y = groundY - buildingHeight;
+                background.addChild(building);
+                buildings.push(building);
+              }
             
             // TODO 3: Part 1 - Add a tree
-            
+            tree = draw.bitmap("https://pngimg.com/d/volkswagen_PNG1777.png");
+            tree.x = 700; 
+            tree.y = 580;
+            tree.scaleX = 0.1
+            tree.scaleY = 0.1
+            background.addChild(tree)
+
             
         } // end of render function - DO NOT DELETE
         
@@ -71,10 +84,17 @@ var background = function (window) {
             groundY = ground.y;
             
             // TODO 3: Part 2 - Move the tree!
-            
+            tree.x = tree.x - 1;
+
+            if (tree.x < -200) {
+            tree.x = canvasWidth;
+}
             
             // TODO 4: Part 2 - Parallax
-            
+            for (var i = 0; i < myArray.length; i++) {
+                var buildings = myArray[i];
+                
+              }
 
         } // end of update function - DO NOT DELETE
         
