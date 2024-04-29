@@ -211,7 +211,7 @@
          */
         _jump = new createjs.Sprite(spritesheet, "jump");
         _jump.x = -(_jump.getBounds().width / 5) - 20;
-        _jump.regX = _jump.width / 2;
+        _jump.regX = _jump.width / 5;
         _jump.y = -(_jump.getBounds().height / 5) - 20;
         _jump.on('animationend', function (e) {
             setAsset(_walk);
