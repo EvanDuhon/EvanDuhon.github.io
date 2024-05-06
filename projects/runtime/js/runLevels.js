@@ -59,7 +59,7 @@ game.addGameItem(enemy);
    enemy.velocityX = -5
 
    enemy.onPlayerCollision = function () {
-    game.changeIntegrity(-10)
+    game.changeIntegrity(-50)
    };
   
    enemy.onProjectileCollision = function(){
@@ -73,31 +73,68 @@ enemy.fadeOut();
   createEnemy(1900, groundY - 60)
   
 
-    function createReward(x,y){
-    var reward = game.createGameItem("reward")
-    var record = draw.bitmap("https://pngimg.com/d/vinyl_PNG1.png")
-    
+  function createReward(x, y) {
+    var reward = game.createGameItem("reward", 32);
+    var gem = draw.bitmap("https://pngimg.com/d/vinyl_PNG1.png");
+    gem.x = -32;
+    gem.y = -32;
     reward.scaleX = 0.1
     reward.scaleY = 0.1
-    reward.addChild(record);
+    reward.addChild(gem);
     reward.x = x;
     reward.y = y;
     game.addGameItem(reward);
     reward.velocityX = -2;
     
 
-    reward.onPlayerCollision = function(){
+    reward.onPlayerCollision = function () {
       game.changeIntegrity(25);
-      game.increaseScore(400);
+      game.increaseScore(300);
       reward.fadeOut();
     };
+  }
+        
+    createReward(3000, groundY -100)
+
+    function createMarker(x, y) {
+      var marker = game.createGameItem("marker", 32);
+      var flag = draw.bitmap("https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/United-States-of-America-PNG/US_Waving_Flag_Transparent_PNG_Clip_Art_Image.png?m=1629819363");
+      flag.x = -32;
+      flag.y = -32;
+      flag.scaleX = 0.04
+      flag.scaleY = 0.04
+      marker.addChild(flag);
+      marker.x = x;
+      marker.y = y;
+      game.addGameItem(marker);
+      marker.velocityX = -2;
+
+      marker.onPlayerCollision = function () {
+        marker.fadeOut();
+        startLevel();
+      };
+      marker.onProjectileCollision = function () {
+        marker.fadeOut();
+        startLevel();
+      };
     }
-    createReward(1000, groundY -60)
+   
+   
+  
+   createMarker(2500, groundY - 150)
 
     function startLevel() {
       // TODO 13 goes below here
+      var level = levelData[1].currentLevel[1]
+      var levelObjects = levelData[1].gameItems
 
-
+      for (var i = 0; i < levelData.length; i++) {
+      var levelData = levelData[i]
+      createEnemy(x,y);
+      createSawBlade(x,y);
+      createReward(x,y);
+      createMarker(x,y);
+      }
 
       //////////////////////////////////////////////
       // DO NOT EDIT CODE BELOW HERE

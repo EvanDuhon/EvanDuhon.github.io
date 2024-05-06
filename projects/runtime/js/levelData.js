@@ -18,6 +18,9 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 400, y: groundY },
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+          { type:  "reward",  x: 2000, y: groundY - 60},
+          { type: "marker", x: 2000, y:groundY - 150},
+          {type: "enemy", x: 700, y: groundY - 60},
         ],
       },
       {
@@ -25,9 +28,23 @@ var makeLevelData = function (window) {
         number: 2,
         speed: -3,
         gameItems: [
-          { type: "sawblade", x: 400, y: groundY },
-          { type: "sawblade", x: 600, y: groundY },
-          { type: "sawblade", x: 900, y: groundY },
+          { type: "sawblade", x: 900, y: groundY - 60},
+          { type: "sawblade", x: 900, y: groundY - 60},
+          { type: "sawblade", x: 900, y: groundY - 60},
+          { type: "enemy", x: 900, y: groundY - 60},
+          { type: "marker", x: 600, y: groundY - 60}
+        ],
+      },
+      {
+        name: "Robot Rock",
+        number: 2,
+        speed: -3,
+        gameItems: [
+          { type: "sawblade", x: 900, y: groundY - 60},
+          { type: "sawblade", x: 900, y: groundY - 60},
+          { type: "sawblade", x: 900, y: groundY - 60},
+          { type: "enemy", x: 900, y: groundY - 60},
+          { type: "marker", x: 600, y: groundY - 60}
         ],
       },
     ];
