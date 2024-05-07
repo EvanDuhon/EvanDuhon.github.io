@@ -135,7 +135,7 @@ enemy.fadeOut();
       createReward(x,y);
       createMarker(x,y);
       }
-
+       
       //////////////////////////////////////////////
       // DO NOT EDIT CODE BELOW HERE
       //////////////////////////////////////////////
