@@ -1,14 +1,9 @@
 body {
-  background-image: linear-gradient( #000428,#0371d2 ) ;
+  background-image: linear-gradient( #21264b,#589cc4 ) ;
   background-repeat: no-repeat;
-  height: 900px
+  height: 950px
 
-    
-  
 }
-
-
-
 
 #all-contents {
   max-width: 900px;
@@ -17,7 +12,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(60, 65, 76);
+    background: rgb(100, 100, 102);
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -27,10 +22,12 @@ nav {
 h1 {
     display: flex;
     align-items: center;
-    color: #78d2d8;
+    color: #4bb9b9;
     flex: 1;
     margin: 0;
 }
+
+
 #nav-ul {
     list-style-image: none;
 }
@@ -40,7 +37,7 @@ h1 {
 }
 a {
     text-decoration: none;
-    color: #83d4da;
+    color: #4bcad3;
 }
 
 /* main container area beneath menu */
@@ -65,7 +62,7 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px rgba(75, 90, 97, 0.343) ridge ;
+    border: 4px rgba(42, 52, 56, 0.343) ridge ;
     padding: 8px;
     border-radius: 30px;
 }
@@ -78,6 +75,7 @@ h2, h3 {
          .content h1 {
             color: rgb(21, 21, 21);
         }
+       
 
         #portfolio {
             list-style-type: none;
@@ -93,12 +91,12 @@ h2, h3 {
       }
 
         #portfolio li:hover {
-            background: #9bb3b8;
+            background: #c6e3e7;
         }
 
         #portfolio a {
             text-decoration: none;
-            color: #437d81;
+            color: #327074;
         }
 
       
