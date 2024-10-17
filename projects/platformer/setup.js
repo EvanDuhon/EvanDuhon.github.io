@@ -92,13 +92,11 @@ let animationDetails = {};
 
 var collectableList = {
   database: { image: "images/collectables/database.png" },
-  diamond: { image: "images/collectables/diamond-head.png" },
-  grace: { image: "images/collectables/grace-head.png" },
-  kennedi: { image: "images/collectables/kennedi-head.png" },
-  max: { image: "images/collectables/max-head.png" },
+  star: { image: "https://www.pngall.com/wp-content/uploads/14/Mario-Star-PNG-Photos.png" },
+  emerald: { image: "https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-retro-illustration-for-game-design-png-image_4703396.png" },
+  max: { image: "https://static.vecteezy.com/system/resources/thumbnails/009/346/118/small/musical-note-flat-icon-png.png" },
   steve: { image: "images/collectables/steve-head.png" },
-  bitcoin: {image:"https://www.usatoday.com/gcdn/-mm-/46837b90ae998993d99356e31057d6d0ad0c3903/c=334-0-1667-1333/local/-/media/2021/04/03/USATODAY/usatsports/MotleyFool-TMOT-feccc6d4-bitcoin-logo.jpg"}
-  ,bored: { image:"https://news.artnet.com/app/news-upload/2021/09/Yuga-Labs-Bored-Ape-Yacht-Club-4466.jpg"}
-   ,vbuck: {image: "https://files.cults3d.com/uploaders/20673655/illustration-file/611799ce-2b67-4519-8937-296639746453/v-bucks3.png"}
-   ,ring: {image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_anpNHpF6gFmM9QegqdvZwhSVy-_ji677i_J0F35hI619FFGN0cIV5WVieMp7Xj7OK10:https://i.pinimg.com/originals/71/b7/2e/71b72ec0dfd5de48d552a84cae516d37.png&usqp=CAU"}
+  fallout: { image:"https://content.instructables.com/FR7/KQ8W/GOCNPNTM/FR7KQ8WGOCNPNTM.png?auto=webp&frame=1&width=320&md=MjAxMy0xMi0xNCAyMTowNDoxNC4w"}
+  ,smashball: {image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Smash_Ball.png/1200px-Smash_Ball.png"}
+   ,coin: {image: "https://icons.iconarchive.com/icons/ph03nyx/super-mario/256/Retro-Coin-icon.png"}
 };

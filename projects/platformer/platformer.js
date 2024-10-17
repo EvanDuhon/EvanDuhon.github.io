@@ -102,17 +102,17 @@ createPlatform(50,200,1,1)
     // Your collectable choices are 'database' 'diamond' 'grace' 'kennedi' 'max' and 'steve'; more can be added if you wish
     // example usage: createCollectable(type, x, y, gravity, bounce)
 
-    createCollectable("diamond", 1100, 170, 0.001, 0.3);
+    createCollectable("max", 1100, 170, 0.001, 0.3);
 
-    createCollectable("diamond", 40, 100, 0.001, 0.3)
+    createCollectable("star", 40, 100, 0.001, 0.3)
 
-    createCollectable("kennedi", 600, 300, 5, 0.01)
+    createCollectable("emerald", 600, 300, 5, 0.01)
 
-    createCollectable("bitcoin", 800, 100,0.001,)
+    createCollectable("smashball", 800, 100,0.001,)
 
-    createCollectable("bored", 900, 100,100, 0.001)
+    createCollectable("fallout", 900, 100,100, 0.001)
 
-    createCollectable("ring",800,30)
+    createCollectable("coin",800,30)
 
     
 
