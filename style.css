@@ -19,7 +19,7 @@ nav {
     padding: 10px;
     
 }
-h1 {
+h1, h2 {
     display: flex;
     align-items: center;
     color: #4bb9b9;
@@ -72,11 +72,12 @@ h2, h3 {
 
 
          /* portfolio styles */
-         .content h1 {
+         .content h1, h2 {
             color: rgb(21, 21, 21);
         }
-       
-
+         
+         
+        
         #portfolio {
             list-style-type: none;
             padding-left: 0;
@@ -98,7 +99,7 @@ h2, h3 {
             text-decoration: none;
             color: #327074;
         }
-
+         
       
 
          /* responsive web design */
