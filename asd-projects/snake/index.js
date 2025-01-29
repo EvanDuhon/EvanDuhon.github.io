@@ -48,7 +48,7 @@ function init() {
    makeSnakeSquare(10,10);
    snake.head = snake.body[0]
   // TODO 4b-2: initialize the apple
-makeApple()
+   makeApple()
   // TODO 5a: Initialize the interval
   updateInterval = setInterval(update, 100);
 }
@@ -86,8 +86,20 @@ function checkForNewDirection(event) {
     snake.head.direction = "left";
   }
 
+  if (activeKey === KEY.RIGHT){
+    snake.head.direction = "right";
+  }
+
+  if (activeKey === KEY.UP){
+    snake.head.direction = "up"
+  }
+
+  if (activeKey === KEY.DOWN){
+    snake.head.direction = "down"
+  }
   // FILL IN THE REST
 
+  
 console.log(snake.head.direction);     // uncomment me!
 }
 
@@ -104,23 +116,48 @@ function moveSnake() {
 
   //Before moving the head, check for a new direction from the keyboard input
   checkForNewDirection();
-
-  /* 
+ /* 
   TODO 7: determine the next row and column for the snake's head
-  
-  HINT: The snake's head will need to move forward 1 square based on the value
+   HINT: The snake's head will need to move forward 1 square based on the value
   of snake.head.direction which may be one of "left", "right", "up", or "down"
   */
+  if (snake.head.direction === "left") {
+    snake.head.column = snake.head.column - 1;
+  }
+  repositionSquare(snake.head);
+  
+  if (snake.head.direction === "right") {
+   snake.head.column = snake.head.column + 1
+}
+repositionSquare(snake.head);
+
+if (snake.head.direction === "up") {
+  snake.head.row = snake.head.row - 1
+}
+repositionSquare(snake.head);
+
+if (snake.head.direction === "down") {
+  snake.head.row = snake.head.row + 1
+}
+repositionSquare(snake.head);
+
 }
 
-function hasHitWall() {
-  /* 
+/* 
   TODO 8: Should return true if the snake's head has collided with the four walls of the
   board, false otherwise.
   
   HINT: What will the row and column of the snake's head be if this were the case?
   */
-
+function hasHitWall() {
+  
+  if (snake.head.row === "COLUMN"){
+    return true
+  }
+  
+  if (snake.head.column === "ROW"){
+    return true
+  }
   return false;
 }
 
