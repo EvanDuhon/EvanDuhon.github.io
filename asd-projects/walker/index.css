@@ -1,6 +1,6 @@
 
 body {
-  background-color: darkgreen;
+  background-color: rgb(16, 52, 92);
 }
 
 #board {
@@ -19,4 +19,12 @@ body {
   border-radius: 50px;
 /*   left: 100px; */  /* Uncomment if you want to set a "starting" position */
 /*   top: 100px;  */  /* Uncomment if you want to set a "starting" position */
+}
+
+#walker2 {
+  background-color: rgb(4, 68, 68);
+  width: 60px;
+  height: 50px;
+  position: absolute;
+  border-radius: 60px;
 }

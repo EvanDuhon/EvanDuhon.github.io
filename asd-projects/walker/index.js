@@ -15,7 +15,11 @@ function runProgram(){
     LEFT: 37,
     RIGHT: 39,
     UP: 38,
-    DOWN: 40
+    DOWN: 40,
+    W: 87,
+    A: 65,
+    S: 83,
+    D: 68
   }
 
   var walker = {
@@ -25,6 +29,14 @@ function runProgram(){
     speedX: 0,
     speedY: 0 
 
+  }
+
+  var walker2 = {
+    positionX: 0,
+    positionY: 0,
+    speedX: 0,
+    speedX: 0,
+    speedY: 0
   }
 
   var width = $('#board').css('width')
@@ -71,35 +83,69 @@ function runProgram(){
     console.log("right pressed")
     walker.speedX = 5
   }
+   if(event.which === KEY.D){
+    console.log("D pressed")
+    walker2.speedX = 5
+  }
+   if(event.which === KEY.A){
+      console.log("A pressed")
+      walker2.speedX = -5
+   }
+
 
     if(event.which === KEY.UP){
     console.log("up pressed")
     walker.speedY = -5
   }
+    if(event.which === KEY.W){
+      console.log("W pressed")
+      walker2.speedY = -5
+    }
 
     if(event.which === KEY.DOWN){
       console.log("down pressed")
       walker.speedY = 5
   }
-   }
-
+    
+    if(event.which === KEY.S){
+     console.log("S pressed")
+     walker2.speedY = 5
+ }
+  }
   function handleKeyUp(event){
     if(event.which === KEY.LEFT) {
       console.log("left released")
       walker.speedX = 0
      }
-    if(event.which === KEY.RIGHT){
+     if(event.which === KEY.A) {
+      console.log("A released")
+      walker2.speedX = 0
+     }
+    
+     if(event.which === KEY.RIGHT){
       console.log("right released")
       walker.speedX = 0
+     }
+     if(event.which === KEY.D) {
+      console.log("D released")
+      walker2.speedX = 0
      }
      if(event.which === KEY.UP){
       console.log("up released")
       walker.speedY = 0
     }
+     if(event.which === KEY.W) {
+      console.log("W released")
+      walker2.speedY = 0
+     }
     if(event.which === KEY.DOWN){
       console.log("down released")
       walker.speedY = 0
     }
+    if(event.which === KEY.S) {
+      console.log("S released")
+      walker2.speedY = 0
+     }
   }
   ////////////////////////////////////////////////////////////////////////////////
   ////////////////////////// HELPER FUNCTIONS ////////////////////////////////////
@@ -107,11 +153,15 @@ function runProgram(){
   function repositionGameItem() {
   walker.positionX += walker.speedX;
   walker.positionY += walker.speedY;
+  walker2.positionX += walker2.speedX;
+  walker2.positionY += walker2.speedY;
   }
 
   function redrawGameItem (){
     $("#walker").css("left", walker.positionX);
     $("#walker").css("top", walker.positionY);
+    $("#walker2").css("left", walker2.positionX);
+    $("#walker2").css("top", walker2.positionY);
   }
    
 
@@ -119,12 +169,21 @@ function runProgram(){
      if(walker.positionX < 0){
       walker.positionX = 0
      }
+     if(walker2.positionX < 0){
+      walker2.positionX = 0
+     }
      if(walker.positionX > width){
       walker.positionX = width
+     }
+     if(walker2.positionX > width){
+      walker2.positionX = width
      }
      if(walker.positionY > height){
       walker.positionY = height
   }
+    if(walker2.positionY > height){
+      walker2.positionY = height
+   }
   
 }
   function endGame() {
