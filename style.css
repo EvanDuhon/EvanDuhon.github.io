@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient( rgb(16, 52, 92),rgb(33, 80, 141) ) ;
+  background-image: linear-gradient( rgb(12, 51, 88),rgb(57, 91, 124) ) ;
   background-repeat: no-repeat;
   height: 950px
 
@@ -12,7 +12,7 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(100, 100, 102);
+    background: #BDC3C7;
    margin: 0 auto;
    margin-bottom: 20px;
     display: flex;
@@ -22,7 +22,8 @@ nav {
 h1, h2 {
     display: flex;
     align-items: center;
-    color: #4bb9b9;
+    color: #235555;
+    font-size: 40px;
     flex: 1;
     margin: 0;
 }
@@ -37,22 +38,22 @@ h1, h2 {
 }
 a {
     text-decoration: none;
-    color: #4bcad3;
+    color: #235555;
 }
 
 /* main container area beneath menu */
 main {
-    background: #a3b0c0;
+    background: #BDC3C7;
     display: flex;
     border-radius: 30px;
 }
 .sidebar {
-    margin-right: 25px;
+    margin-right: 19px;
     padding: 10px;
 }
 .sidebar-img {
-    width: 300px;
-    height: 300px
+    width: 400px;
+    height: 400px
     
 }
 .content {
@@ -82,6 +83,11 @@ h2, h3 {
             list-style-type: none;
             padding-left: 0;
         }
+
+        #AdvancedProjects {
+          list-style-type: none;
+          padding-left: 0;
+      }
       
         #portfolio li {
           background: rgb(245, 242, 242);
@@ -91,15 +97,30 @@ h2, h3 {
           border-radius: 30px;
       }
 
+      #AdvancedProjects li {
+        background: rgb(245, 242, 242);
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        border-radius: 30px;
+    }
         #portfolio li:hover {
             background: #c6e3e7;
         }
+          
+        #AdvancedProjects li:hover {
+          background: #c6e3e7;
+      }
 
         #portfolio a {
             text-decoration: none;
             color: #327074;
         }
          
+        #AdvancedProjects a {
+          text-decoration: none;
+          color: #327074;
+      }
       
 
          /* responsive web design */

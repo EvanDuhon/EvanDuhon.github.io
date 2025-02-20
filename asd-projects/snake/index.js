@@ -151,14 +151,14 @@ repositionSquare(snake.head);
   */
 function hasHitWall() {
   
-  if (snake.head.row === "COLUMN"){
+  if (snake.head.column === "COLUMN"){
     return true
   }
   
-  if (snake.head.column === "ROW"){
+  if (snake.head.row === "ROW"){
     return true
   }
-  return false;
+ 
 }
 
 function hasCollidedWithApple() {
